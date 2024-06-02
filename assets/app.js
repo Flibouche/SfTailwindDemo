@@ -7,4 +7,17 @@ import './bootstrap.js';
  */
 import './styles/app.css';
 
+import 'tw-elements';
+
+// Initialization for ES Users
+import {
+    Collapse,
+    Dropdown,
+    Ripple,
+    Carousel,
+    initTWE
+  } from "tw-elements";
+  
+  initTWE({ Collapse, Dropdown, Ripple }, { Carousel }, { allowReinits: true });
+
 console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
